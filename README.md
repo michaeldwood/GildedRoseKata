@@ -9,8 +9,9 @@ Tools > Extensions and Updates
 On the left hand click "Online" and search for NUnit. Install "NUnit 3 Test Adapter".
 
 ### Running the tests.
-Go to Test > Run > All Tests
-Alternatively, CTRL+R, A
+Within Visual Studio, go to: Test > Run > All Tests
+
+Alternatively, press CTRL+R, A
 
 ## Build & Run
 
