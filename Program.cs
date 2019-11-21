@@ -20,14 +20,7 @@ namespace GildedRose
                 new Item {Name = "Conjured", SellIn = -1, Quality = 5}
             };
 
-            var app = new GildedRose(Items);
-            app.UpdateInventory();
-
-                for (var j = 0; j < Items.Count; j++)
-                {
-                    Console.WriteLine(Items[j]);
-                }
-            Console.WriteLine("");
+            new GildedRose(Items);
             Console.ReadLine();
         }
     }

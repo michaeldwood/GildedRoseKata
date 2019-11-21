@@ -2,14 +2,15 @@
 
 namespace GildedRose.Models
 {
-    public class Item
+    public class Item : IItem
     {
         private int _quality;
 
         public string Name { get; set; }
         public int SellIn { get; set; }
 
-        public int Quality {
+        public int Quality
+        {
             get
             {
                 return _quality;
@@ -22,14 +23,19 @@ namespace GildedRose.Models
                 }
                 else
                 {
-                   _quality = value;
+                    _quality = value;
                 }
             }
+        }
+
+        public int DegradationMultiplyer()
+        {
+            return SellIn < 0 ? 2 : 1;
         }
 
         public override string ToString()
         {
             return Name + " " + SellIn + " " + Quality;
-        }  
+        }
     }
 }
